@@ -1,0 +1,433 @@
+#BrushCursor {
+    position: relative;
+    width: 100%;
+}
+.container1 {
+    height: 100%;
+    width: 100%;
+}
+.AH{
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+  
+  @media only screen and (min-width: 500px) {
+    .AH {
+      font-size: 2.4rem;
+    }
+  }
+  
+  @media only screen and (min-width: 700px) {
+    .AH {
+      font-size: 2.4rem;
+      text-transform: uppercase;
+    }
+    .AH.leftAH{
+      font-size: 1.6rem;
+      text-transform: uppercase;
+    }
+  }
+  
+  .AH1 {
+    text-shadow: 1px 1px -1px black, -1px -1px 1px rgba(0, 0, 0, .1);
+    color: #02bc95;
+  }
+  .AH1 span{
+    text-shadow: 1px 1px -1px black, -1px -1px 1px rgba(0, 0, 0, .1);
+    color: #312783;
+  }
+  
+  .AH2 {
+    color: #ff2f5a;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    animation: text-animation 4s ease-in-out forwards alternate infinite;
+  }
+  
+  .AH3 {
+    color: transparent;
+  }
+  
+  @keyframes text-animation {
+    from {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    to {
+      clip-path: polygon(0 0, 0% 1%, 0% 100%, 0% 100%);
+    }
+  }
+  
+  .cursor1 {
+    position: absolute;
+    top: 50%;
+    height: 64%;
+    width: 100%;
+    border-right: 2px solid #ff2f5a;
+    animation: cursor-animation 4s ease-in-out forwards alternate infinite;
+}
+  @keyframes cursor-animation {
+    from {
+      width: 100%;
+    }
+    to {
+      width: 0;
+    }
+  }
+.heading_b_line span {
+    display: inline-block;
+    width: 100px;
+    height: 2.5px;
+    background: #ff2f5a;
+    position: relative;
+    margin-top: 36px;
+}
+.heading_line_b_small span{
+    margin-top: 25px;
+}
+.heading_b_line span::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 35px;
+    right: 0;
+    margin: auto;
+    height: 12px;
+    width: 12px;
+    background: #312783;
+    border-radius: 50%;
+    animation: line_over 2s ease-in-out infinite;
+}
+
+@keyframes line_over{
+    0%,100%{
+        transform: translateX(-35px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+
+}
+
+.event_heading_deafult{
+    padding-top: 80px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.event_heading_deafult_small {
+    padding-top: 80px;
+    padding-bottom: 0px;
+}
+.event_heading_deafult p{
+    font-weight: 300;
+    font-size: 18px;
+    color: #312783;
+
+}
+
+
+
+/* -------------- Our Event Page Css Start ============= */
+.event_wrapper_item{
+    margin-bottom: 20px;
+    border: 1px solid #02bc95;
+    border-radius: 10px;
+    transition: .4s ease-in-out;
+}
+.event_wrapper_item:hover{
+    transform: translateY(-10px);
+    border: 1px solid #ff2f5a;
+
+}
+.event-img{
+    position: relative;
+}
+.event-img img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+.event_date {
+    min-width: 100px;
+    text-align: center;
+    padding: 10px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, .2);
+    position: absolute;
+    z-index: 111;
+    bottom: -25px;
+    left: 16px;
+    border-top: 3px solid #ff2f5a;
+}
+.event_date h1{
+    font-family: 700;
+    font-size: 18px;
+    color: #02bc95;
+}
+.event_date span{}
+.event-content {
+    padding: 40px 20px 20px 20px;
+}
+.event-content a h1{
+    font-family:"Li Alinur Tatsama Unicode";
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #02bc95;
+    font-family: 600 !important;
+    transition: .4s ease-in-out;
+}
+.event-content a h1:hover{
+    color: #ff2f5a;
+}
+.event-content p{
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 300;
+}
+.event_read_btn{
+    display: inline-block;
+    background: #ff2f5a;
+    padding: 8px 20px;
+    color: #fff !important;
+    border-radius: 30px;
+    position: relative;
+    z-index: 1;
+}
+.event_read_btn::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:0;
+    height: 100%;
+    background: #02bc95;
+    border-radius: 30px;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s ease-in-out;
+}
+.event_read_btn:hover::after{
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+
+}
+/* -------------- Our Event Page Css Start ============= */
+
+
+/* ---------- Lightbox Photo Gallery Image Css ============= */
+.lightboxpreview {
+    transition: all 0.3s linear;
+    padding-top: 60%;
+    cursor: pointer;
+    background-size: cover;
+  }
+  
+  .lightbox-content {
+    max-height: 75vh;
+    height: 75vh;
+    width: 100%;
+    max-width: 1000px;
+  }
+  
+  .lightbox-close {
+    cursor: pointer;
+    margin-left: auto;
+    position: absolute;
+    right: -30px;
+    top: -30px;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .modal_inner_image {
+    min-height: 400px;
+    z-index: 1000;
+  }
+  .modal-content {
+    width: 100%;
+  }
+  
+  .modalscale {
+    transform: scale(0);
+    opacity: 0;
+  }
+  
+  .lightbox-container,
+  .lightbox-btn,
+  .lightbox-image-wrapper,
+  .lightbox-enabled {
+    transition: all 0.4s ease-in-out;
+  }
+  .lightbox_img_wrap {
+    margin-bottom: 25px;
+    padding-top: 65%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .lightbox-enabled:hover {
+    transform: scale(1.2);
+  }
+  .imge_middle_icon span{
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+
+  }
+  .lightbox-enabled {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 4px solid #bdbdbd;
+}
+  
+  .lightbox-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 99999999999;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .lightbox-container.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .lightbox-image-wrapper {
+    display: flex;
+    transform: scale(0);
+    align-items: center;
+    justify-content: center;
+    max-width: 90vw;
+    max-height: 90vh;
+    position: relative;
+  }
+  .lightbox-container.active .lightbox-image-wrapper {
+    transform: scale(1);
+  }
+  .lightbox-btn,
+  #close {
+    color: white;
+    z-index: 9999999;
+    cursor: pointer;
+    position: absolute;
+  
+    font-size: 50px;
+  }
+  
+  .lightbox-btn:focus {
+    outline: none;
+  }
+  
+  .left {
+    left: 50px;
+  }
+  .right {
+    right: 50px;
+  }
+  #close {
+    top: 50px;
+    right: 50px;
+  }
+  
+  .lightbox-image {
+    width: 100%;
+    -webkit-box-shadow: 5px 5px 20px 2px rgba(0, 0, 0, 0.19);
+    box-shadow: 5px 5px 20px 2px rgba(0, 0, 0, 0.19);
+    max-height: 95vh;
+    object-fit: cover;
+  }
+  
+  @keyframes slideleft {
+    33% {
+      transform: translateX(-300px);
+      opacity: 0;
+    }
+    66% {
+      transform: translateX(300px);
+      opacity: 0;
+    }
+  }
+  
+  .slideleft {
+    animation-name: slideleft;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+  }
+  @keyframes slideright {
+    33% {
+      transform: translateX(300px);
+      opacity: 0;
+    }
+    66% {
+      transform: translateX(-300px);
+      opacity: 0;
+    }
+  }
+  
+  .slideright {
+    animation-name: slideright;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+  }
+  
+/* ---------- Lightbox Photo Gallery Image Css ============= */
+
+
+
+
+/* -----------School Rules Css Start ------------- */
+.school_rules_wrapper{
+    padding: 40px;
+    box-shadow: 0 0 15px 2px rgba(0, 0, 35, .1);
+    border-radius: 10px;
+}
+.rules_title{}
+.rules_title h1{
+  font-family:"Li Alinur Tatsama Unicode";
+font-size: 24px;
+}
+.rules_title h1 span{
+    color: #ff2f5a;
+}
+.rules_contents{
+    margin-top: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.rules_contents h2{
+  margin-bottom: 14px;
+  font-family:"Li Alinur Tatsama Unicode";
+  font-size: 18px;
+  color: #02bc95;
+}
+.rules_contents ul{
+    list-style: circle;
+}
+.rules_contents ul li{
+    margin: 14px 0;
+}
+/* -----------School Rules Css Start ------------- */

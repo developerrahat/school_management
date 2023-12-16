@@ -1,0 +1,189 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .box_shadow {
+        padding: 0.5rem;
+    }
+    .login_btn_style a {
+        margin: 0 4px;
+        text-align: center;
+    }
+    .header_top_left {
+        text-align: center;
+    }
+    .justify-content-end {
+        justify-content: center !important;
+        margin-top: 15px;
+    }
+    .header_logo_main a img {
+        width: 75px;
+    }
+    .header_logo_text h1 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .header_logo_text span {
+        font-size: 1rem;
+
+    }
+    .navigation {
+        display: flex !important;
+    }
+   .carousel-item{
+    padding: 160px 0;
+   }
+   .tricker_middle_content h1 {
+	font-size: 32px;
+	text-align: center;
+    }
+    .tricker_btn {
+        text-align: center;
+        padding: 15px 0;
+    }
+    .info_text_wrappers {
+        padding:6px;
+    }
+    .circle_img {
+        height: 145px;
+        width: 127px;
+        right: 0px;
+    }
+    .board_link_right_menu h1 {
+        font-size: 16px;
+    }
+    .board_link_wrapper {
+        padding: 6px;
+    }
+    .board_link_right_menu ul li a{
+        font-size: 14px;
+    }
+    .quick_menu_heading {
+        font-size: 20px;
+    }
+    .notice_download a {
+        padding: 4px 12px;
+        font-size: 12px;
+    }
+    .notice_item {
+        padding: 10px;
+    }
+    .footer_top_menu ul li a {
+        font-size: 14px;
+    }
+
+
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .navigation {
+        display: flex !important;
+    }
+    .header_logo_text h1 {
+        line-height: 42px;
+    }
+    .header_logo_text span {
+        font-size: 1.4rem;
+        margin-top: -1px;
+    }
+    .student_login a, .institude_login a {
+        padding: 5px 12px;
+        font-size: 12px;
+
+    }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .navigation {
+        display: flex !important;
+    }
+    .hridoye_banghobondhu::after {
+        right: 10px;
+
+    }
+    .circle_img {
+        right: -2px;
+
+    }
+    .board_link_right_menu h1 {
+        font-size: 20px;
+    }
+    .language-switcher {
+        left:-25px;
+    }
+    .totop {
+     right: 0.6%;
+    }
+    .sbuttons {
+        bottom: 12%;
+        right:-10px;
+    }
+
+
+
+ }
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+ .nav-menu > li > a {
+	padding: 20px 22px;
+}
+    .faculty_trapper {
+        height: 200px;
+    }
+    .notice_item h4 {
+        line-height: 30px;
+        margin-bottom: 1rem;
+    }
+    .board_link_left_img img {
+        width: 50px;
+    }
+    .board_link_right_menu h1 {
+        font-size: 18px;
+    }
+    .language-switcher {
+        left:-25px;
+    }
+    .totop {
+     right: 0.6%;
+    }
+    .sbuttons {
+        bottom: 12%;
+        right:-10px;
+    }
+
+
+ }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+    .container-fluid{
+        max-width: 1300px !important;
+    }
+    .board_link_right_menu h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .faculty_trapper {
+        height: 210px;
+    }
+ }
+
+ /* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    .container-fluid{
+        max-width: 1360px !important;
+        -moz-max-width:1360px;
+    }
+    .sbuttons {
+        bottom: 16%;
+        right: -0.5rem;
+    }
+    .totop {
+        right: 0.6%;
+    }
+    .language-switcher {
+        left: -1%;
+    }
+
+ }
